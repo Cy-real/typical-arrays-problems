@@ -1,6 +1,6 @@
 
 exports.min = function min (array) {
-  let minimum = 0;
+  let minimum;
   if (array === undefined || array.length === 0) return 0;
   for (let i=0;i<array.length;i++)
   {
@@ -10,7 +10,7 @@ exports.min = function min (array) {
 }
 
 exports.max = function max (array) {
-  let maximum=0;
+  let maximum;
    if (array === undefined || array.length === 0) return 0;
   for (let i=0;i<array.length;i++)
   {	  
