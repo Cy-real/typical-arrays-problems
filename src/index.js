@@ -20,11 +20,11 @@ exports.max = function max (array) {
 }
 
 exports.avg = function avg (array) {
-  let average = 1;
+  let average = 0;
 if (array === undefined || array.length === 0) return 0;
   for (let i=0;i<array.length;i++)
   {
-	  average*=array[i]/array.length;
+	  average+=array[i];
   }
-  return average;
+  return average/array.length;
 }
